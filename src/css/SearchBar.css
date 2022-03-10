@@ -1,0 +1,10 @@
+#searchBar {
+  border-radius: 15px;
+  border: 2px solid #FFBF46;
+  color: #FFBF46;
+  background-color: rgb(5, 5, 5);
+  padding: 20px;
+  width: 20rem;
+  height: 0.5rem;
+  font-size: 17px;
+}
