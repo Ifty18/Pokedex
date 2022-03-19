@@ -12,6 +12,14 @@
   width: 280px;
   background-color: aliceblue;
   border-radius: 12px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 3px;
+}
+
+.cardAnchorTag {
+  width: 280px;
+  text-decoration: none;
 }
 
 .cardHeader {
@@ -29,6 +37,10 @@
 .cardAttributes {
   display: flex;
   align-items: center;
+}
+
+.cardUpperText {
+  color: rgb(14, 14, 14);
 }
 
 #image {

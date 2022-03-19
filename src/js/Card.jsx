@@ -1,14 +1,11 @@
 const Card = function Card( pokemon ) { 
   //storing the name of the pokemon
-  let text = pokemon.visibility.visibility;
   const name = pokemon.pokemon.name;
-  // console.log(pokemon);
-  // console.log(text);
   //we have to see if the card can be shown or not
   let display = "visible";
-  if ((text !== "") && (name.toLowerCase().search(text) === -1) && (pokemon.pokemon.types[0].type.name.toLowerCase().search(text) === -1)){
-    display = "invisible";
-  }
+  // if ((text !== "") && (name.toLowerCase().search(text) === -1) && (pokemon.pokemon.types[0].type.name.toLowerCase().search(text) === -1)){
+  //   display = "invisible";
+  // }
 
   //if the input has not been hidden yet && input is a number && text != pokemon id then hide
   // if(pokemon.pokemon.name === "charmander"){
@@ -25,6 +22,7 @@ const Card = function Card( pokemon ) {
   //the pokemon id must look like this #023
   //since they have different lenghts, we must treat every scenario
   let id = pokemon.pokemon.id;
+  let rawid = id;
   id = id.toString();
   if (id.length === 1){
     id = "#00" + id;
@@ -66,16 +64,18 @@ const Card = function Card( pokemon ) {
   
 
   return (
-  <div className={`card ${color} ${display}`} id="card1">
-    <div className="cardHeader">
-      <h2>{name}</h2>
-      <h2>{id}</h2>
+  <a href={"pokemon/" + rawid} className="cardAnchorTag">
+    <div className={`card ${color} ${display}`} id="card1">
+      <div className="cardHeader cardUpperText">
+        <h2>{name}</h2>
+        <h2>{id}</h2>
+      </div>
+      <div className="cardBody">
+        <Attributes pokemon={pokemon}/>
+        <img src={image} id="image" alt="pokemon"></img>
+      </div>
     </div>
-    <div className="cardBody">
-      <Attributes pokemon={pokemon}/>
-      <img src={image} id="image" alt="pokemon"></img>
-    </div>
-  </div>
+  </a>
   );
 };
 
