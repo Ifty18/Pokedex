@@ -33,8 +33,8 @@ const Card = function Card( pokemon ) {
   }
 
   //getting the picture
-  const image = pokemon.pokemon.sprites.other.official_artwork.front_default;
-
+  // const image = pokemon.pokemon.sprites.other.official_artwork.front_default;
+  const image = pokemon.pokemon.sprites.other["official-artwork"].front_default;
   //building the Attributes component
   function Attributes (pokemon){
     //each pokemon has either one or two arguments

@@ -1,3 +1,15 @@
+#load-more-pokemons {
+  height: 40px;
+  background-color: rgb(41, 41, 41);
+  border-radius: 12px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(243, 245, 137);
+  color:rgb(255, 205, 67);
+  font-size: 14px;
+  font-weight: 600;
+}
+
 #cardsContainer {
   margin: 3rem 1rem 2rem 1rem;
   display: grid;
@@ -80,6 +92,50 @@
 
 .ghost {
   background-color: rgb(181, 102, 255);
+}
+
+.bug {
+  background-color: rgb(255, 252, 86);
+}
+
+.poison {
+  background-color: rgb(95, 72, 117);
+}
+
+.ground {
+  background-color: rgb(135, 96, 70);
+}
+
+.fairy {
+  background-color: rgb(240, 164, 250);
+}
+
+.fighting {
+  background-color: rgb(204, 52, 52);
+}
+
+.psychic {
+  background-color: rgb(107, 122, 226);
+}
+
+.rock {
+  background-color: rgb(198, 198, 198);
+}
+
+.ice {
+  background-color: rgb(196, 255, 255);
+}
+
+.dragon {
+  background-color: rgb(255, 166, 0);
+}
+
+.dark {
+  background-color: rgb(78, 53, 98);
+}
+
+.steel {
+  background-color: rgb(255, 255, 255);
 }
 
 .visible {
