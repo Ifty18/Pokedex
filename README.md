@@ -15,6 +15,7 @@ The data is retrieved using API calls made to <a href="https://pokeapi.co">Pokea
 Each card can be clicked in order to view more details about the selected pokemon. Stats such as HP, Attack, Defense, etc. and also the pokemon's evolutions can be seen:
 
 |![](https://github.com/Ifty18/Pokedex/blob/master/public/screenshots/pokemon-details1.jpg)|![](https://github.com/Ifty18/Pokedex/blob/master/public/screenshots/pokemon-details2.jpg)|
+|---|---|
 
 ### Deployment
 
