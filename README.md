@@ -19,4 +19,4 @@ Each card can be clicked in order to view more details about the selected pokemo
 
 ### Deployment
 
-The application was deployed using <a href="https://www.netlify.com">Netlify</a> since it was an easy and free option.
+The application was deployed using <a href="https://www.netlify.com">Netlify</a> and can be found at the following URL: <a href="https://ifty-s-pokedex.netlify.app/pokemon/2">https://ifty-s-pokedex.netlify.app/pokemon/2</a>.
